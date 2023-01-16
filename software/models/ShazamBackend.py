@@ -61,11 +61,6 @@ class ShazamBackend(QObject):
         self._worker.daemon = True
         self._worker.start()
 
-    def stop(self):
-        if self._worker and self._worker.is_alive():
-            self._worker.join()
-        self._worker = None
-
     def _search(self):
         try:
             @atexit.register
@@ -82,7 +77,7 @@ class ShazamBackend(QObject):
         except ClientConnectorError as exc:
             errorText: str = repr(exc)
             logging.error(errorText + traceback.format_exc())
-            system("sudo reboot")
+            system("reboot")
         except Exception as exc:
             errorText: str = repr(exc)
             logging.error(errorText + traceback.format_exc())
