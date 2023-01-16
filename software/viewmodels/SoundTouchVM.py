@@ -42,6 +42,7 @@ class SoundTouchVM(BaseVM):
         self._setHeader()
         self._setSong()
         self._setState()
+        logging.info(self._state.value)
 
     @Slot()
     def _onShazamStateChanged(self, state: ShazamSearchState):
@@ -74,9 +75,6 @@ class SoundTouchVM(BaseVM):
 
     def _tryShazam(self):
         self._shazamBackend.startSearch()
-
-    def _stopShazam(self):
-        self._shazamBackend.stop()
 
     def _displayOn(self):
         if self._displayIsOff:
@@ -115,8 +113,6 @@ class SoundTouchVM(BaseVM):
             _state = SoundtouchState(SoundtouchState.Options.RADIO)
             if (self._status.artist is None) or (self._status.artist == ""):
                 self._tryShazam()
-            else:
-                self._stopShazam()
         if _state != self._state:
             _old = self._state
             self._state = _state
