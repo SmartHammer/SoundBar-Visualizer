@@ -1,0 +1,460 @@
+[
+    {
+        "_host": "192.168.178.36",
+        "_port": 8090,
+        "_ws_port": 8080,
+        "_dlna_port": 8091,
+        "_config": {
+            "_id": "A81B6AC48026",
+            "_name": "SoundTouch 20",
+            "_type": "SoundTouch 20",
+            "_account_uuid": "5247078",
+            "_module_type": "sm2",
+            "_variant": "spotty",
+            "_variant_mode": "normal",
+            "_country_code": "GB",
+            "_region_code": "GB",
+            "_networks": [
+                {
+                    "_type": "SCM",
+                    "_mac_address": "A81B6AC48026",
+                    "_ip_address": "192.168.178.36"
+                },
+                {
+                    "_type": "SMSC",
+                    "_mac_address": "F45EAB744F90",
+                    "_ip_address": "192.168.178.36"
+                }
+            ],
+            "_components": [
+                {
+                    "_category": "SCM",
+                    "_software_version": "27.0.3.46298.4608935 epdbuild.trunk.hepdswbld04.2021-10-06T16:35:02",
+                    "_serial_number": "U6339037101720048000440"
+                },
+                {
+                    "_category": "PackagedProduct",
+                    "_software_version": null,
+                    "_serial_number": "069430P63540140AE"
+                }
+            ]
+        },
+        "_status": {
+            "_source": "TUNEIN",
+            "_content_item": {
+                "_name": "ROCK ANTENNE",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s25217",
+                "_source_account": "",
+                "_is_presetable": true
+            },
+            "_track": "ROCK ANTENNE",
+            "_artist": "Europe - Carrie",
+            "_album": null,
+            "_image": "http://cdn-albums.tunein.com/gn/T6P70KQ140g.jpg",
+            "_duration": null,
+            "_position": null,
+            "_play_status": "PLAY_STATE",
+            "_shuffle_setting": null,
+            "_repeat_setting": null,
+            "_stream_type": "RADIO_STREAMING",
+            "_track_id": null,
+            "_station_name": "ROCK ANTENNE",
+            "_description": null,
+            "_station_location": null
+        },
+        "_volume": {
+            "_actual": 23,
+            "_target": 23,
+            "_muted": false
+        },
+        "_zone_status": null,
+        "_presets": [
+            {
+                "_name": "ROCK ANTENNE Melodic Rock",
+                "_id": "1",
+                "_source": "RADIOPLAYER",
+                "_type": "stationurl",
+                "_location": "/preset/station/stations_2035",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"RADIOPLAYER\" type=\"stationurl\" location=\"/preset/station/stations_2035\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Melodic Rock</itemName><containerArt>http://dtu8ldmaopof3.cloudfront.net/i/https%3A%2F%2Fassets.radioplayer.org%2F276%2F2762035%2F600%2F600%2Fkyepg76r.png_300.jpg</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE",
+                "_id": "2",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s25217",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s25217\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE</itemName><containerArt>http://cdn-profiles.tunein.com/s25217/images/logoq.jpg?t=152942</containerArt></ContentItem>"
+            },
+            {
+                "_name": "Rapid Rock Radio",
+                "_id": "3",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s243596",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s243596\" sourceAccount=\"\" isPresetable=\"true\"><itemName>Rapid Rock Radio</itemName><containerArt>http://cdn-radiotime-logos.tunein.com/s243596q.png</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE Heavy Metal",
+                "_id": "4",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s125937",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s125937\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Heavy Metal</itemName><containerArt>http://cdn-profiles.tunein.com/s125937/images/logoq.jpg</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE Melodic Rock",
+                "_id": "5",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s308768",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s308768\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Melodic Rock</itemName><containerArt>http://cdn-profiles.tunein.com/s308768/images/logoq.png?t=157019</containerArt></ContentItem>"
+            },
+            {
+                "_name": "RADIO BOB - Symphonic Metal",
+                "_id": "6",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s309522",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s309522\" sourceAccount=\"\" isPresetable=\"true\"><itemName>RADIO BOB - Symphonic Metal</itemName><containerArt>http://cdn-profiles.tunein.com/s309522/images/logoq.jpg?t=160389</containerArt></ContentItem>"
+            }
+        ],
+        "_ws_client": null,
+        "_volume_updated_listeners": [],
+        "_status_updated_listeners": [],
+        "_presets_updated_listeners": [],
+        "_zone_status_updated_listeners": [],
+        "_device_info_updated_listeners": [],
+        "_snapshot": null
+    },
+    {
+        "_host": "192.168.178.39",
+        "_port": 8090,
+        "_ws_port": 8080,
+        "_dlna_port": 8091,
+        "_config": {
+            "_id": "606405F5FD71",
+            "_name": "SoundTouch 300 Livingroom",
+            "_type": "SoundTouch 300",
+            "_account_uuid": "5247078",
+            "_module_type": "sm2",
+            "_variant": "ginger",
+            "_variant_mode": "noap",
+            "_country_code": "GB",
+            "_region_code": "GB",
+            "_networks": [
+                {
+                    "_type": "SCM",
+                    "_mac_address": "606405F5FD71",
+                    "_ip_address": "192.168.178.39"
+                },
+                {
+                    "_type": "SMSC",
+                    "_mac_address": "F0C77FCFC07F",
+                    "_ip_address": "192.168.178.39"
+                }
+            ],
+            "_components": [
+                {
+                    "_category": "SCM",
+                    "_software_version": "27.0.3.46298.4608935 epdbuild.trunk.hepdswbld04.2021-10-06T16:35:02",
+                    "_serial_number": "606405f5fd71"
+                },
+                {
+                    "_category": "PackagedProduct",
+                    "_software_version": "1.16.7.4608931",
+                    "_serial_number": "073990P70030215AE"
+                },
+                {
+                    "_category": "F0",
+                    "_software_version": "1.8.1.12410",
+                    "_serial_number": "n/a"
+                },
+                {
+                    "_category": "BLOB",
+                    "_software_version": "1.16.7.4608931",
+                    "_serial_number": "n/a"
+                },
+                {
+                    "_category": "LPM",
+                    "_software_version": "1.16.7.12619: 2021-06-15T12:16:01 (Release)",
+                    "_serial_number": "n/a"
+                },
+                {
+                    "_category": "LPMBL",
+                    "_software_version": "1.0.0.7617",
+                    "_serial_number": "n/a"
+                },
+                {
+                    "_category": "LLW",
+                    "_software_version": "25",
+                    "_serial_number": "n/a"
+                },
+                {
+                    "_category": "DSP",
+                    "_software_version": "1.9.12.12429",
+                    "_serial_number": "n/a"
+                },
+                {
+                    "_category": "HDMI",
+                    "_software_version": "1.00.21.20",
+                    "_serial_number": "n/a"
+                }
+            ]
+        },
+        "_status": {
+            "_source": "RADIOPLAYER",
+            "_content_item": {
+                "_name": "ROCK ANTENNE Melodic Rock",
+                "_source": "RADIOPLAYER",
+                "_type": "stationurl",
+                "_location": "/preset/station/stations_2035",
+                "_source_account": "",
+                "_is_presetable": true
+            },
+            "_track": "ROCK ANTENNE Melodic Rock",
+            "_artist": null,
+            "_album": null,
+            "_image": "http://dtu8ldmaopof3.cloudfront.net/i/https%3A%2F%2Fassets.radioplayer.org%2F276%2F2762035%2F600%2F600%2Fkyepg76r.png_300.jpg",
+            "_duration": null,
+            "_position": null,
+            "_play_status": "PLAY_STATE",
+            "_shuffle_setting": null,
+            "_repeat_setting": null,
+            "_stream_type": "RADIO_STREAMING",
+            "_track_id": null,
+            "_station_name": "ROCK ANTENNE Melodic Rock",
+            "_description": null,
+            "_station_location": null
+        },
+        "_volume": {
+            "_actual": 2,
+            "_target": 2,
+            "_muted": false
+        },
+        "_zone_status": null,
+        "_presets": [
+            {
+                "_name": "ROCK ANTENNE Melodic Rock",
+                "_id": "1",
+                "_source": "RADIOPLAYER",
+                "_type": "stationurl",
+                "_location": "/preset/station/stations_2035",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"RADIOPLAYER\" type=\"stationurl\" location=\"/preset/station/stations_2035\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Melodic Rock</itemName><containerArt>http://dtu8ldmaopof3.cloudfront.net/i/https%3A%2F%2Fassets.radioplayer.org%2F276%2F2762035%2F600%2F600%2Fkyepg76r.png_300.jpg</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE",
+                "_id": "2",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s25217",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s25217\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE</itemName><containerArt>http://cdn-profiles.tunein.com/s25217/images/logoq.jpg?t=152942</containerArt></ContentItem>"
+            },
+            {
+                "_name": "Rapid Rock Radio",
+                "_id": "3",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s243596",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s243596\" sourceAccount=\"\" isPresetable=\"true\"><itemName>Rapid Rock Radio</itemName><containerArt>http://cdn-radiotime-logos.tunein.com/s243596q.png</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE Heavy Metal",
+                "_id": "4",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s125937",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s125937\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Heavy Metal</itemName><containerArt>http://cdn-profiles.tunein.com/s125937/images/logoq.jpg</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE Melodic Rock",
+                "_id": "5",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s308768",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s308768\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Melodic Rock</itemName><containerArt>http://cdn-profiles.tunein.com/s308768/images/logoq.png?t=157019</containerArt></ContentItem>"
+            },
+            {
+                "_name": "RADIO BOB - Symphonic Metal",
+                "_id": "6",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s309522",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s309522\" sourceAccount=\"\" isPresetable=\"true\"><itemName>RADIO BOB - Symphonic Metal</itemName><containerArt>http://cdn-profiles.tunein.com/s309522/images/logoq.jpg?t=160389</containerArt></ContentItem>"
+            }
+        ],
+        "_ws_client": null,
+        "_volume_updated_listeners": [],
+        "_status_updated_listeners": [],
+        "_presets_updated_listeners": [],
+        "_zone_status_updated_listeners": [],
+        "_device_info_updated_listeners": [],
+        "_snapshot": null
+    },
+    {
+        "_host": "192.168.178.37",
+        "_port": 8090,
+        "_ws_port": 8080,
+        "_dlna_port": 8091,
+        "_config": {
+            "_id": "9884E3A03E8E",
+            "_name": "SoundTouch 30 Office",
+            "_type": "SoundTouch 30",
+            "_account_uuid": "5247078",
+            "_module_type": "sm2",
+            "_variant": "mojo",
+            "_variant_mode": "normal",
+            "_country_code": "GB",
+            "_region_code": "GB",
+            "_networks": [
+                {
+                    "_type": "SCM",
+                    "_mac_address": "9884E3A03E8E",
+                    "_ip_address": "192.168.178.37"
+                },
+                {
+                    "_type": "SMSC",
+                    "_mac_address": "A81B6A7BF1F6",
+                    "_ip_address": "192.168.178.37"
+                }
+            ],
+            "_components": [
+                {
+                    "_category": "SCM",
+                    "_software_version": "27.0.3.46298.4608935 epdbuild.trunk.hepdswbld04.2021-10-06T16:35:02",
+                    "_serial_number": "U7026061502720048000440"
+                },
+                {
+                    "_category": "PackagedProduct",
+                    "_software_version": null,
+                    "_serial_number": "069447970580398AE"
+                }
+            ]
+        },
+        "_status": {
+            "_source": "STANDBY",
+            "_content_item": {
+                "_name": null,
+                "_source": "STANDBY",
+                "_type": null,
+                "_location": null,
+                "_source_account": null,
+                "_is_presetable": false
+            },
+            "_track": null,
+            "_artist": null,
+            "_album": null,
+            "_image": null,
+            "_duration": null,
+            "_position": null,
+            "_play_status": null,
+            "_shuffle_setting": null,
+            "_repeat_setting": null,
+            "_stream_type": null,
+            "_track_id": null,
+            "_station_name": null,
+            "_description": null,
+            "_station_location": null
+        },
+        "_volume": {
+            "_actual": 15,
+            "_target": 15,
+            "_muted": false
+        },
+        "_zone_status": null,
+        "_presets": [
+            {
+                "_name": "ROCK ANTENNE Melodic Rock",
+                "_id": "1",
+                "_source": "RADIOPLAYER",
+                "_type": "stationurl",
+                "_location": "/preset/station/stations_2035",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"RADIOPLAYER\" type=\"stationurl\" location=\"/preset/station/stations_2035\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Melodic Rock</itemName><containerArt>http://dtu8ldmaopof3.cloudfront.net/i/https%3A%2F%2Fassets.radioplayer.org%2F276%2F2762035%2F600%2F600%2Fkyepg76r.png_300.jpg</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE",
+                "_id": "2",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s25217",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s25217\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE</itemName><containerArt>http://cdn-profiles.tunein.com/s25217/images/logoq.jpg?t=152942</containerArt></ContentItem>"
+            },
+            {
+                "_name": "Rapid Rock Radio",
+                "_id": "3",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s243596",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s243596\" sourceAccount=\"\" isPresetable=\"true\"><itemName>Rapid Rock Radio</itemName><containerArt>http://cdn-radiotime-logos.tunein.com/s243596q.png</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE Heavy Metal",
+                "_id": "4",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s125937",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s125937\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Heavy Metal</itemName><containerArt>http://cdn-profiles.tunein.com/s125937/images/logoq.jpg</containerArt></ContentItem>"
+            },
+            {
+                "_name": "ROCK ANTENNE Melodic Rock",
+                "_id": "5",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s308768",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s308768\" sourceAccount=\"\" isPresetable=\"true\"><itemName>ROCK ANTENNE Melodic Rock</itemName><containerArt>http://cdn-profiles.tunein.com/s308768/images/logoq.png?t=157019</containerArt></ContentItem>"
+            },
+            {
+                "_name": "RADIO BOB - Symphonic Metal",
+                "_id": "6",
+                "_source": "TUNEIN",
+                "_type": "stationurl",
+                "_location": "/v1/playback/station/s309522",
+                "_source_account": "",
+                "_is_presetable": true,
+                "_source_xml": "<ContentItem source=\"TUNEIN\" type=\"stationurl\" location=\"/v1/playback/station/s309522\" sourceAccount=\"\" isPresetable=\"true\"><itemName>RADIO BOB - Symphonic Metal</itemName><containerArt>http://cdn-profiles.tunein.com/s309522/images/logoq.jpg?t=160389</containerArt></ContentItem>"
+            }
+        ],
+        "_ws_client": null,
+        "_volume_updated_listeners": [],
+        "_status_updated_listeners": [],
+        "_presets_updated_listeners": [],
+        "_zone_status_updated_listeners": [],
+        "_device_info_updated_listeners": [],
+        "_snapshot": null
+    }
+]
