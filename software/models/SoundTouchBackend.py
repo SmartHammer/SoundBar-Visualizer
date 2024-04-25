@@ -13,6 +13,7 @@ class SoundTouchBackend(QObject):
         super().__init__(parent)
         self._searcher = SoundTouchDeviceSearcher()
         self._devices = self._searcher.getDevices()
+        print(self._devices)
         self._path: str = path.dirname(path.abspath(__file__))
         if len(self._devices) == 0:
             _dump: str = path.join(self._path, "soundtouch.dump")

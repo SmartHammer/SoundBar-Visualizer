@@ -114,7 +114,7 @@ class ShazamBackend(QObject):
     def _findTrack(self):
 
         async def _find():
-            _shazamInfo: dict = await self._shazam.recognize_song(path.join(self._path, "shazam-this.mp3"))
+            _shazamInfo: dict = await self._shazam.recognize(path.join(self._path, "shazam-this.mp3"))
             if "track" in _shazamInfo.keys():
                 _track: dict = _shazamInfo["track"]
                 if "title" in _track.keys():

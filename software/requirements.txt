@@ -1,0 +1,6 @@
+shazamio
+numpy
+scipy
+numba
+libsoundtouch
+zeroconf

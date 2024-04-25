@@ -40,55 +40,78 @@ apt-get install -f \
 
 ## File structure
 ```
-.  
-├── LICENSE  
-├── README.md  
-├── service  
-│   └── soundtouch.service  
-└── software  
-    ├── components  
-    │   └── PropertyViewer.qml  
-    ├── controller  
-    │   ├── Application.py  
-    │   ├── ViewManagerBase.py  
-    │   └── ViewManager.py  
-    ├── fsm  
-    │   ├── States.py  
-    │   └── ViewContext.py  
-    ├── main.py  
-    ├── main.pyproject  
-    ├── models  
-    ├── run.sh  
-    ├── viewmodels  
-    │   ├── BaseVM.py  
-    │   ├── MainWindowVM.py  
-    │   ├── ShazamVM.py  
-    │   └── SoundTouchVM.py  
-    └── views  
-        ├── BaseView.py  
-        ├── MainWindow.qml  
-        ├── ShazamView.qml  
-        └── SoundTouchView.qml  
+software
+├── LICENSE
+├── README.md
+├── _3rdparty
+│   └── libsoundtouch
+│       ├── __init__.py
+│       ├── device.py
+│       ├── templates
+│       │   └── avt_transport_uri.xml
+│       └── utils.py
+├── assets
+│   ├── PLASMA-ColorCycling.gif
+│   ├── i-feel-empty.jpg
+│   ├── search animation.gif
+│   ├── shazam-blue.png
+│   ├── tv-icon.png
+│   └── tv.jpg
+├── components
+│   ├── Headline.qml
+│   ├── MediaPlayer.qml
+│   ├── ProductTV.qml
+│   ├── PropertyViewer.qml
+│   ├── ShazamResult.qml
+│   ├── ShazamSearching.qml
+│   ├── SongViewer.qml
+│   ├── Standby.qml
+│   ├── TextWithShadow.qml
+│   └── WebRadio.qml
+├── controller
+│   ├── Application.py
+│   ├── ViewManager.py
+│   └── ViewManagerBase.py
+├── doc
+│   └── Structure.md
+├── fsm
+│   ├── States.py
+│   └── ViewContext.py
+├── helper
+│   ├── MicrophoneListener.py
+│   ├── NetworkChecker.py
+│   └── singletondecorator.py
+├── main.py
+├── main.pyproject
+├── main.pyproject.user
+├── models
+│   ├── ShazamBackend.py
+│   ├── ShazamSearchState.py
+│   ├── SoundTouchBackend.py
+│   ├── SoundTouchDeviceSearcher.py
+│   ├── SoundTouchSearchBackend.py
+│   ├── selected.pickle
+│   ├── shazam-this.mp3
+│   ├── shazam-this.wav
+│   └── soundtouch.dump
+├── run.sh
+├── service
+│   └── soundtouch.service
+├── viewmodels
+│   ├── BaseVM.py
+│   ├── Header.py
+│   ├── MainWindowVM.py
+│   ├── ShazamVM.py
+│   ├── Song.py
+│   ├── SoundTouchSearchVM.py
+│   ├── SoundTouchVM.py
+│   ├── States.py
+│   └── soundtouch.json
+└── views
+    ├── BaseView.py
+    ├── MainWindow.qml
+    ├── ShazamView.qml
+    ├── ShutdownView.qml
+    ├── SoundTouchSearchView.qml
+    └── SoundTouchView.qml
 ```
-
-## Service
-The folder  __*service*__ contains an example service file.
-Place this folder in
-
-```
-/  
-└── usr  
-    └── lib  
-        └── systemd  
-            └── system  
-```
-and the whole software folder in
-
-```
-/  
-└── mnt  
-    └── shared  
-```
-
-## Software structure
-see [documentation](doc/Structure.md)

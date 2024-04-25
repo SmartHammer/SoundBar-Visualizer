@@ -1,5 +1,6 @@
 # This Python file uses the following encoding: utf-8
-from _3rdparty.libsoundtouch import SoundTouchSearcher
+#from _3rdparty.libsoundtouch import SoundTouchSearcher
+from libsoundtouch import discover_devices
 from PySide2.QtCore import QObject, Signal
 from helper.singletondecorator import singleton
 from threading import Thread, currentThread
@@ -12,15 +13,19 @@ class SoundTouchDeviceSearcher(QObject):
 
     def __init__(self, parent=None):
         super().__init__(parent)
+        self._init()
+
+    def _init(self):
         self._worker = None
         self._devices = []
 
     def startSearch(self, timeout=5):
-        if not self._worker:
-            self._timeout = timeout
-            self._worker = Thread(target=self._search)
-            self._worker.daemon = True
-            self._worker.start()
+        if self._worker:
+            self._init()
+        self._timeout = timeout
+        self._worker = Thread(target=self._search)
+        self._worker.daemon = True
+        self._worker.start()
 
     def getDevices(self):
         return self._devices
@@ -30,6 +35,8 @@ class SoundTouchDeviceSearcher(QObject):
         def killed():
             print ("'CLEANLY' kill SoundTouchDeviceSearcher-thread: \
                 [THREAD: %s]" % (currentThread().ident))
-        self._devices = SoundTouchSearcher.searchSoundTouchDevices(self._timeout)
+
+        # self._devices = SoundTouchSearcher.searchSoundTouchDevices(self._timeout)
+        self._devices = discover_devices(timeout=self._timeout)
         self.finished.emit(self._devices)
         atexit.unregister(killed)

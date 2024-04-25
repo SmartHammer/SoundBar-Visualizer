@@ -12,7 +12,8 @@ from viewmodels.Song import Song
 from viewmodels.States import SoundtouchState
 import logging
 from subprocess import run
-
+#from _3rdparty.libsoundtouch.utils import Source
+from libsoundtouch.utils import Source, Type
 
 class SoundTouchVM(BaseVM):
     def __init__(self, viewManager: ViewManagerBase, parent=None):
@@ -113,8 +114,8 @@ class SoundTouchVM(BaseVM):
         elif self._isRadio():
             self._stopScreenOffTimer()
             _state = SoundtouchState(SoundtouchState.Options.RADIO)
-            if (self._status.track == self._getStationName()):
-            #if (self._status.artist is None) or (self._status.artist == ""):
+            if self._getTrack() == self._getStationName():
+            # if (self._status.artist is None) or (self._status.artist == ""):
                 self._tryShazam()
             else:
                 self._stopShazam()
@@ -138,10 +139,10 @@ class SoundTouchVM(BaseVM):
             self.songChanged.emit(self._song)
 
     def _isStandby(self):
-        return self._status and (self._status.source == "STANDBY")
+        return self._status and (self._status.source == Source.STANDBY.value)
 
     def _isTV(self):
-        return self._status and (self._status.source == "PRODUCT") and (self._status.content_item.source_account == "TV")
+        return self._status and (self._status.source == Source.PRODUCT.value) and (self._status.content_item.source_account == "TV")
 
     def _isRadio(self):
         return self._status and (self._status.stream_type == "RADIO_STREAMING")
