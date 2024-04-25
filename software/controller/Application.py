@@ -6,7 +6,7 @@ import logging.handlers
 from PySide2.QtGui import QGuiApplication, QCursor
 from PySide2.QtQml import QQmlApplicationEngine
 from PySide2.QtQml import qmlRegisterType
-from PySide2.QtCore import Qt
+from PySide2.QtCore import Qt, QDate, QDateTime, QTime, QTimer
 from viewmodels.States import SoundtouchState, ShazamState
 from fsm.ViewContext import ViewContext
 from .ViewManager import ViewManager
@@ -33,6 +33,14 @@ class Application (QGuiApplication):
                                         self._engine,
                                         self._viewContext,
                                         self)
+        _now = QDateTime.currentDateTime()
+        self._resetTimer = QTimer()
+        self._resetTimer.timeout.connect(lambda: sys.exit(-1))
+        _resetTime: QTime = QTime(6, 0, 0)
+        _resetDate: QDate = _now.date()
+        if _now.time() >= _resetTime:
+            _resetDate.addDays(1)
+        self._resetTimer.start(_now.msecsTo(QDateTime(_resetDate, _resetTime, _now.timeZone())))
         if not self._engine.rootObjects():
             _exit_code = -1
         else:

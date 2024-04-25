@@ -1,0 +1,21 @@
+[Unit]
+Description=Soundtouch visualization
+
+[Service]
+User=pi
+Group=pi
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+ExecStart=/mnt/shared/soundtouchvisualization/software/run.sh
+Restart=on-failure
+RestartSec=10s
+KillMode=mixed  
+StopAsGroup=true
+KillAsGroup=true
+TimeoutSec=infinity
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=ServiceScript
+
+[Install]
+WantedBy=graphical.target

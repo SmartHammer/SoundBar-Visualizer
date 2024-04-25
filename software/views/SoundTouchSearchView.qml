@@ -35,7 +35,8 @@ BaseView {
             objectName: "statusText"
             color: "yellow"
             anchors.centerIn: parent
-            text: "searching ..."
+            text: context
+                  && context.searchRunning ? "searching ..." : "waiting ..."
             font.pixelSize: 28
         }
     }
