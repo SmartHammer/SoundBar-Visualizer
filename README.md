@@ -41,15 +41,6 @@ apt-get install -f \
 ## File structure
 ```
 software
-├── LICENSE
-├── README.md
-├── _3rdparty
-│   └── libsoundtouch
-│       ├── __init__.py
-│       ├── device.py
-│       ├── templates
-│       │   └── avt_transport_uri.xml
-│       └── utils.py
 ├── assets
 │   ├── PLASMA-ColorCycling.gif
 │   ├── i-feel-empty.jpg
@@ -72,8 +63,6 @@ software
 │   ├── Application.py
 │   ├── ViewManager.py
 │   └── ViewManagerBase.py
-├── doc
-│   └── Structure.md
 ├── fsm
 │   ├── States.py
 │   └── ViewContext.py
@@ -92,11 +81,9 @@ software
 │   ├── SoundTouchSearchBackend.py
 │   ├── selected.pickle
 │   ├── shazam-this.mp3
-│   ├── shazam-this.wav
 │   └── soundtouch.dump
+├── requirements.txt
 ├── run.sh
-├── service
-│   └── soundtouch.service
 ├── viewmodels
 │   ├── BaseVM.py
 │   ├── Header.py
